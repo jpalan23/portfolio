@@ -1,0 +1,151 @@
+@media only screen and (max-width: 991px) {
+
+    .code-shop h4{
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        position: absolute;
+        top: 30%;
+        left: 38%;
+        -webkit-transform: translate(-40%,-50%);
+        transform: translate(-32%,-50%);
+    }
+
+    .code-shop h2{
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        font-size: 250%;
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        font-family: 'Lato', serif;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        word-spacing: 8px;
+        /* text-decoration: blink; */
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .resume_content h6{
+        font-size: 15px;
+    }
+    .contact-me-body .contact-info {
+        padding-left: 30px;
+    }
+
+    .contact-form input[type=submit]{
+        font-size: 8px;
+        padding: 17px 6px;
+    }
+    #send-msg{
+        padding: 0;
+    }
+    footer .row:nth-of-type(3) {
+        padding-left: 26%;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .download-resume{
+        margin-left: 36%;
+    }
+    .contact-me-body .contact-info {
+        padding-left: 65px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+.main-logo img{
+    height: 120px;
+    width: 120px;
+}
+    .main-header h1{
+        font-size: 180%;
+    }
+    .main-header h3{
+        font-size: 100%;
+    }
+
+    .mybtn{
+        top: 76%;
+        left: 50%;
+        padding: 10px 12px;
+    }
+    .section_header{
+        padding-top: 35px;
+    }
+    .cd-timeline-content h2{
+        font-size: 22px;
+    }
+    .cd-timeline-content p{
+        font-size: 12px;
+    }
+    .resume .section_header h4 {
+        font-size: 18px;
+    }
+    .resume .section_header h2 {
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+    .mybtn1{
+        padding: 16px 12px;
+    }
+    .download-resume{
+        margin-left: 28%;
+        margin-top: 10%;
+    }
+    .resume_content ul li {
+        margin: 3px 0px;
+        font-size: 13px;
+        /* letter-spacing: 0.5px; */
+    }
+    .education-property .col-xs-12 .col-xs-8 p{
+        font-size: 12px;
+    }
+
+    .education-property .col-xs-12 .col-xs-4{
+        font-size: 12px;
+    }
+
+    .resume_content h6{
+        font-size: 14px;
+    }
+
+    .experience-content span{
+        font-size: 12px;
+        margin-top: 19px;
+    }
+
+    .contact-me-header h3{
+        font-size: 18px;
+    }
+
+    .contact-me-body .contact-info {
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    .contact-form input[type=submit] {
+    padding: 14px 6px;
+        font-size: 10px;
+    }
+
+    footer .row:nth-of-type(3) {
+        padding-left: 12%;
+    }
+
+    .personal-nav li a:visited{
+        color: #ed6a5a !important;
+    }
+
+}

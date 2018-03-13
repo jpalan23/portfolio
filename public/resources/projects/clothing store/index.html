@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yaarz Shopping Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="vendors/font-awesome-4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    </head>
+    <body>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!--<div class="subs-popup"></div>-->
+    <nav class="navbar navbar-inverse navbar-fixed-top fixd-nav">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../code_shop.html"><img alt="Brand" src="resources/img/Logo.svg" height="40px"></a>
+                <form class=" navbar-collapse navbar-left hidden-search-bar" role="search">
+                    <div class="form-group search-bar">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                   <li><form class="navbar-form navbar-right active-search-bar " role="search">
+                        <div class="form-group search-bar">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form></li>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><a href="#">Cart <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                    <li class="dropdown" id="menuLogin">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                        <div class="dropdown-menu" style="padding:17px;">
+                            <form class="form login-form" id="formLogin">
+                                <div class="form-group active-form">
+                                    <input name="username" class="form-control" id="username" type="text" placeholder="Username">
+                                    <input name="password" class="form-control" id="password" type="password" placeholder="Password"><br>
+                                    <button type="button" id="btnLogin" class="btn btn-default">Login</button>
+                                    <button type="button" id="btnAddAcc" class="btn btn-default">Create An Account</button>
+                                    <span><a href="">Forgot Password?</a> </span>
+                                </div>
+                                <div class="form-group hidden-form">
+                                    <h4 class="modal-title">CREATE AN ACCOUNT</h4>
+                                    <input name="username" class="form-control" id="new-username" type="text" placeholder="Username">
+                                    <input name="username" class="form-control" id="new-emailid" type="text" placeholder="Email Id">
+                                    <input name="username" class="form-control" id="new-password" type="text" placeholder="Password">
+                                    <input name="username" class="form-control" id="new-phone" type="text" placeholder="Mobile No.">
+                                    <button type="submit" id="regSubmit"  class="btn btn-lg btn-info btn-block">Sign Up</button>
+                                </div>
+                            </form>
+                        </div></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <section class="navigation">
+        <ul class="fixed-navigation">
+            <li><a class="active" href="#home"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+            <li class="padd"><a href="#mens" ><i class="fa fa-male fa-2x " aria-hidden="true"></i></a></li>
+            <li class="padd"><a href="#womens" class="padd"><i class="fa fa-female fa-2x " aria-hidden="true"></i></a></li>
+            <li class="padd"><a href="#baby" class="padd"><i class="fa fa-child fa-2x " aria-hidden="true"></i></a></li>
+            <li><a href="#about"><i class="fa fa-percent fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+
+        <nav class="vertical">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Men's Collection</a>
+                    <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Joggers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Women's Collection</a>
+                    <ul>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li>
+                            <a href="#">Jeans</a>
+                            <ul>
+                                <li><a href="#">Skinny</a></li>
+                                <li><a href="#">Bell Bottom</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="#">Baby's Collection</a>
+                    <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Shorts</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sale</a></li>
+            </ul>
+        </nav>
+
+    </section>
+    <section class="main-content">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-7  image-slider">
+                <div id="hero">
+                    <div class="current"><img src="resources/img/home-img-slider/boy.jpg"></div>
+                    <div><img src="resources/img/home-img-slider/girl.jpeg"></div>
+                    <div><img src="resources/img/home-img-slider/baby.jpeg"></div>
+                </div>
+                <div class="connections">
+                    <ul>
+                        <li><a href="product.html" >Men</a></li>
+                        <li><a href="product.html" >Women</a></li>
+                        <li><a href="product.html" >Baby's</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <div id="poster" class="shadow">
+                    <img src="resources/img/poster1.jpeg">
+                    <span class="details">
+                        NEW ARRIVALS : City Break
+                    </span>
+
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 land1 shadow">
+                <a href="product.html"> <img src="resources/img/land1.jpeg">
+                <span class="details">
+                    Dresses
+                </span></a>
+            </div>
+            <div class="col-lg-2 col-md-2  col-sm-2 logo">
+                <div id="landscape">
+                    <img src="resources/img/logo.svg">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 land2 shadow">
+                <a href="#"><img src="resources/img/land2.jpg">
+                <span class="details">
+                    New Children's Apparels
+                </span></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 land3 shadow">
+            <a href="product.html"><img src="resources/img/land3.jpeg">
+                <span class="details">
+                    Evergreen Women Collection
+                </span></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 land3 shadow">
+            <a href="#"><img src="resources/img/sale.jpg">
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="row">
+            <h2>Our Work Culture</h2>
+
+
+        <div class="plx">
+            <div class="embd-player">
+            <a href="#"  data-toggle="modal" data-target="#videoModal" data-theVideo="http://mazwai.com/system/posts/videos/000/000/220/original/the_valley-graham_uheslki.mp4?1460898850" >
+                <!--<img src="resources/img/land4.jpg" alt="img1">-->
+                <!--<span class="video-info"> Lorem Ipsum</span>-->
+                <span class="video-button"> <img src="resources/img/youtube-symbol%20(1).png" alt="img2"></span>
+            </a>
+            
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <div>
+                                <iframe width="100%" height="350" src=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="social">
+        <div class="row">
+            <h2>Connect With Us</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 social-logos">
+                <span class="circle"><a href="https://twitter.com/jpalan23?lang=en" class="twitter-logo"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a> </span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 social-logos">
+                <span class="circle"><a href="https://www.facebook.com/palanjay" class="facebook-logo"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a> </span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 social-logos">
+                <span class="circle"><a href="https://twitter.com/jpalan23?lang=en" class="insta-logo"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 social-logos">
+                <span class="circle"><a href="mailto:jpalan.gmu@gmail.com" class="google-logo"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 left">
+                <p>COMPANY</p>
+                <p id="c-address">
+                    10600 G, Kitty Pozer Dr<br>
+                    Fairfax , VA<br>
+                    571-778-8434
+                </p>
+                <p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 middle-1 col-xs-12 soc">
+                <p>CONNECT WITH US</p>
+                <ul>
+                    <li><a href="https://twitter.com/jpalan23?lang=en"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> </a> </li>
+                    <li><a href="https://www.facebook.com/palanjay"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i> </a> </li>
+                    <li><a href="https://www.instagram.com/jay_palan_/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> </a> </li>
+                    <li><a href="mailto:jpalan.gmu@gmail.com"><i class="fa fa-mail-forward fa-2x" aria-hidden="true"></i> </a> </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 cust-serv">
+                <p>CUSTOMER SERVICE</p>
+                <ul>
+                    <li><a href="#">Contact Us</a> </li>
+                    <li><a href="#">Return Policy</a> </li>
+                    <li><a href="#">Shpping & Track</a> </li>
+                    <li><a href="#">FAQ</a> </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 right">
+                <p>
+                    <span>SIGN UP TO OUR NEWSLETTER</span><br>
+                    <span class="newsletter">Receive news and offers from us.</span>
+                </p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Your Email Address">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Sign Up!</button>
+                      </span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/jquery.cookie.js"></script>
+    <script src="resources/js/myScript.js"></script>
+    <script src="resources/js/popupScript.js"></script>
+    </body>
+</html>

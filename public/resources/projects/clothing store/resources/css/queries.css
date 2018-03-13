@@ -1,0 +1,246 @@
+@media only screen and (min-width:992px) and (max-width: 1200px){
+    /*Footer Adjustment*/
+    footer .soc li {
+
+        margin: 14px 3%;
+    }
+    footer .newsletter{
+        display: none;
+    }
+
+    /*Product page Adjustment*/
+    .product-description {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px){
+
+    /*Section Adjustment*/
+    .showcase ul{
+        width: 95%;
+        margin-left: 2.5%;
+
+    }
+
+    /*Footer Adjustment*/
+
+
+    footer .soc ul{
+        padding: 0 7px;
+    }
+    footer .soc li {
+        margin: 14px 2.5%
+    }
+    footer .newsletter{
+        display: none;
+    }
+    footer .left #c-address{
+        font-size: small;
+    }
+    footer .right input::-webkit-input-placeholder{
+        content: "Email";
+    }
+
+    footer .cust-serv li a{
+        font-size: small;
+    }
+
+    /*Product page Adjustment*/
+    .product-description {
+        padding-left: 10px;
+    }
+    .prd-showcase ul {
+        width: 100%;
+    }
+    .prd-showcase li {
+        width: 20%;
+        padding: 0 4px;
+        margin: 0 2.5%;
+    }
+
+    .prd-qty select{
+        width: 25%;
+    }
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .hidden-search-bar input{
+        width: 250px;
+        margin: 8px auto;
+        border: 0;
+    }
+
+    .logo{
+        display: none;
+    }
+        /*Footer Adjustment*/
+    footer{
+        display: inline-block;
+    }
+    footer .soc li {
+        margin: 14px 4%;
+    }
+    .cust-serv li {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    footer .newsletter{
+        display: none;
+    }
+    .input-group {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }
+
+    /*Product Page*/
+
+    .product-description {
+        padding-left: 10px;
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .product-description p{
+        width: 100%;
+        text-align: center;
+    }
+    .prd-description h6:after{
+        display: block;
+        content: "";
+        height: 2px;
+        width: 100%;background-color: #d5d5d5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .prd-option {
+        width: 40%;
+        margin: 0 auto;
+        height: 130px;
+        padding-bottom: 20px;
+    }
+
+   .product-section{
+       display: block;
+       min-height: 1000px;
+   }
+   .prd-showcase ul{
+       width: 100%;
+   }
+
+   .prd-showcase li{
+       width: 20%;
+   }
+
+   .related-items{
+       margin-top: 0;
+   }
+}
+@media only screen and (max-width: 767px){
+
+    .active-search-bar{
+        display: none;
+    }
+
+    .hidden-search-bar{
+        display: block;
+    }
+
+    .category1 .prd-showcase li{
+        padding: 0;
+    }
+
+    .login-form {
+        margin: 0 auto;
+    }
+    /*Section Adjustment*/
+    .category1 h2{
+        font-size: large;
+    }
+    .active-showcase-list{
+        display: none;
+    }
+    .showcase .second-list{
+        display: none;
+    }
+    .view-more{
+        display: none;
+    }
+    .hidden-showcase-list{
+        display: inline-block;
+    }
+    /*Footer Adjustment*/
+    footer{
+        display: inline-block;
+    }
+    footer .soc li {
+        margin: 14px 4%;
+    }
+    .cust-serv li {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    footer .newsletter{
+        display: none;
+    }
+    .input-group {
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }
+    .logo{
+        display: none;
+    }
+
+    .product-description {
+        padding-left: 10px;
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /*Checkout Customisation*/
+
+    .order-details{
+        border-bottom: 2px solid #8c8c8c;
+    }
+
+}
+
+@media only screen and (max-width: 479px){
+
+
+
+    /*Product Page*/
+    .product-section{
+
+        display: block;
+        min-height:1000px;
+    }
+    .related-items{
+        margin-top: 0;
+    }
+    .prd-showcase ul{
+        width: 100%;
+    }
+
+    .prd-showcase li{
+        width: 25%;
+    }
+
+    .prd-color-opt,.prd-size-opt{
+        margin-left: 20%;
+    }
+
+    .prd-qty select {
+        height: 48px;
+        display: inline-block;
+        width: 35%;
+    }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yaarz Shopping Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/imageviewer.css">
+    <link rel="stylesheet" type="text/css" href="vendors/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top fixd-nav">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../code_shop.html"><img alt="Brand" src="resources/img/Logo.svg" height="40px"></a>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><form class="navbar-form navbar-right " role="search">
+                    <div class="form-group search-bar">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Cart <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                <li class="dropdown" id="menuLogin">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                    <div class="dropdown-menu" style="padding:17px;">
+                        <form class="form login-form" id="formLogin">
+                            <div class="form-group active-form">
+                                <input name="username" class="form-control" id="username" type="text" placeholder="Username">
+                                <input name="password" class="form-control" id="password" type="password" placeholder="Password"><br>
+                                <button type="button" id="btnLogin" class="btn btn-default">Login</button>
+                                <button type="button" id="btnAddAcc" class="btn btn-default">Create An Account</button>
+                                <span><a href="">Forgot Password?</a> </span>
+                            </div>
+                            <div class="form-group hidden-form">
+                                <h4 class="modal-title">CREATE AN ACCOUNT</h4>
+                                <input name="username" class="form-control" id="new-username" type="text" placeholder="Username">
+                                <input name="username" class="form-control" id="new-emailid" type="text" placeholder="Email Id">
+                                <input name="username" class="form-control" id="new-password" type="text" placeholder="Password">
+                                <input name="username" class="form-control" id="new-phone" type="text" placeholder="Mobile No.">
+                                <button type="submit" id="regSubmit"  class="btn btn-lg btn-info btn-block">Sign Up</button>
+                            </div>
+                        </form>
+                    </div></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<section class="navigation">
+    <ul class="fixed-navigation">
+        <li><a class="active" href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+        <li class="padd"><a href="#mens" ><i class="fa fa-male fa-2x " aria-hidden="true"></i></a></li>
+        <li class="padd"><a href="#womens" class="padd"><i class="fa fa-female fa-2x " aria-hidden="true"></i></a></li>
+        <li class="padd"><a href="#baby" class="padd"><i class="fa fa-child fa-2x " aria-hidden="true"></i></a></li>
+        <li><a href="#about"><i class="fa fa-percent fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+
+    <nav class="vertical">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Men's Collection</a>
+                <ul>
+                    <li><a href="index.html">Shirts</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Joggers</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Women's Collection</a>
+                <ul>
+                    <li><a href="index.html">Tops</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li>
+                        <a href="#">Jeans</a>
+                        <ul>
+                            <li><a href="#">Skinny</a></li>
+                            <li><a href="#">Bell Bottom</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="#">Baby's Collection</a>
+                <ul>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Jeans</a></li>
+                    <li><a href="#">Shorts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sale</a></li>
+        </ul>
+    </nav>
+
+</section>
+<section class="main-content product-section">
+
+       <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2">
+           <ul class="product-thumbnails">
+               <li><a href="#"><img id="first-image" src="resources/img/thumbnails/2.jpg"  alt="2" class="img-thumbnail"></a></li>
+               <li><a href="#"><img id="second-image" src="resources/img/thumbnails/1.jpeg" alt="1" class="img-thumbnail"></a></li>
+               <li><a href="#"><img id="third-image" src="resources/img/thumbnails/2.jpg" alt="3" class="img-thumbnail"></a></li>
+               <li><a href="#"><img id="fourth-image" src="resources/img/thumbnails/1.jpeg" alt="4" class="img-thumbnail"></a></li>
+           </ul>
+       </div>
+
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-10 product-default">
+            <a href="#"><img id="main-image" src="resources/img/thumbnails/1.jpeg"
+                             class="pannable-image img-thumbnail" alt="1"></a>
+        </div>
+
+        <div class="col-lg-6 col-md-6  col-sm-6 col-xs-12 product-description">
+            <div class="prd-title">
+               <h4>Shine Linen Brazer</h4>
+            </div>
+            <div class="prd-price">
+                <h5> Rs. 4500</h5>
+            </div>
+            <div class="prd-option">
+                <div class="prd-color">
+                    Color: <span>Black</span>
+                    <div class="prd-color-opt">
+                        <ul>
+                            <li><a href="#" class="selectable"><img src="resources/img/color1.png" class="img-rounded" alt="1"></a> </li>
+                            <li><a href="#" class="selectable"><img src="resources/img/color2.png" class="img-rounded" alt="1"></a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="prd-size">
+                    <p>Size: <span>Size Guide</span> </p>
+                    <div class="prd-size-opt">
+                        <ul>
+                            <li><a class="selectable" href="#">S</a> </li>
+                            <li><a href="#" class="selectable" >M</a> </li>
+                            <li><a href="#" class="selectable">L</a> </li>
+                            <li><a href="#" class="selectable">XL</a> </li>
+                            <li><a href="#" class="selectable">XLL</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="prd-cart">
+                <div class="prd-qty">
+                    <select class="form-control" id="qty">
+                        <option selected>QTY</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="prd-add">
+                    <a  class="btn add-btn" type="button" href="checkout.html">Add To Bag</a>
+                </div>
+            </div>
+
+            <div class="prd-description">
+                <h6> Description</h6>
+
+                <p>
+                    TECHNICAL BLAZER<br>
+                    Technical suit blazer with two button fastening.<br>
+                    Badge detail on pointed lapel.<br>
+                    Pocket at the top, two front pockets and two interior pockets.<br>
+                    Buttoned cuffs. Double back vent. Lined<br>
+                    <span>HEIGHT OF MODEL: 188 cm. SIZE EUR 50</span>
+                </p>
+            </div>
+        </div>
+</section>
+<section class="related-items ">
+    <div class="row">
+    <h2>Related Products</h2>
+    <div class="rel-prd-list">
+        <div class="prd-showcase">
+            <ul>
+                <li ><a href="#"><img src="resources/img/1.jpeg" alt="1"><span class="desc"> Blues <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/2.jpg" alt="2"><span class="desc"> Black <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/3.jpg" alt="3"><span class="desc"> Red <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/4.jpeg" alt="1"><span class="desc">Blues <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/1.jpeg" alt="2"><span class="desc">Black <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/2.jpg" alt="3"><span class="desc">Red <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/3.jpg" alt="1"><span class="desc">Blues <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/4.jpeg" alt="2"><span class="desc">Black <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/1.jpeg" alt="3"><span class="desc">Red <br> Rs. 1400</span></a></li>
+                <li ><a href="#"><img src="resources/img/2.jpg" alt="1"><span class="desc">Blues <br> Rs. 1400</span></a></li>
+            </ul>
+            <div >
+                <i class="fa fa-caret-left fa-2x left-cursor"></i>
+            </div>
+            <div >
+                <i class="fa fa-caret-right fa-2x right-cursor"></i>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+<footer>
+    <div class="row ">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 left">
+            <p>COMPANY</p>
+            <p id="c-address">
+                10600 G, Kitty Pozer Dr<br>
+                Fairfax , VA<br>
+                571-778-8434
+            </p>
+            <p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 middle-1 col-xs-12 soc">
+            <p>CONNECT WITH US</p>
+            <ul>
+                <li><a href="https://twitter.com/jpalan23?lang=en"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> </a> </li>
+                <li><a href="https://www.facebook.com/palanjay"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i> </a> </li>
+                <li><a href="https://www.instagram.com/jay_palan_/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i> </a> </li>
+                <li><a href="mailto:jpalan.gmu@gmail.com"><i class="fa fa-mail-forward fa-2x" aria-hidden="true"></i> </a> </li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 cust-serv">
+            <p>CUSTOMER SERVICE</p>
+            <ul>
+                <li><a href="#">Contact Us</a> </li>
+                <li><a href="#">Return Policy</a> </li>
+                <li><a href="#">Shpping & Track</a> </li>
+                <li><a href="#">FAQ</a> </li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 right">
+            <p>
+                <span>SIGN UP TO OUR NEWSLETTER</span><br>
+                <span class="newsletter">Receive news and offers from us.</span>
+            </p>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your Email Address">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Sign Up!</button>
+                      </span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="vendors/js/bootstrap.min.js"></script>
+<script src="vendors/js/imageviewer.js"></script>
+<!--<script src="vendors/js/parallax.min.js"></script>-->
+<script src="resources/js/myScript.js"></script>
+</body>
+</html>

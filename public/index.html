@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Graduate student pursuing masters in Science, computer science at George Mason University">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i" rel="stylesheet">
+    <!-- Modernizr -->
+    <title>Jay Palan</title>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIsK6VK7t_qdOM2Q_csuXOnWOnpqaS-Eo"></script>
+
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 10,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(38.8462, -77.3064),
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles:[{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"},{"hue":"#ff0000"}]}]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(38.8399962, -77.3042723),
+                map: map,
+                title: 'Snazzy!'
+            });
+        }
+
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top" id="mynavbar">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img alt="Brand" src="resources/img/Logo.svg">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse personal-nav" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about_id">About</a></li>
+                <li><a href="code_shop.html">Code Shop</a></li>
+                <li><a href="#resume_id">Resume</a></li>
+                <li><a href="#contact_id">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="particles-js" class="container-fluid home-part">
+    <div class="row" >
+        <div class="main-logo">
+            <img src="resources/img/Logo.svg" alt="Logo" height="200" width="200">
+        </div>
+        <div class="main-header">
+            <h1>Jay Palan</h1>
+            <hr>
+            <h3>EXPLORE DREAM DISCOVER</h3>
+            <hr>
+        </div>
+        <a class="mybtn js--to-about" href="#">About Me</a>
+    </div>
+</div>
+<section class="about_me js--section-about" id="about_id">
+    <div class="container">
+        <div class="row">
+            <div class="section_header">
+                <h2>Journey Till Now</h2>
+                <div class="personal_hr">
+                    <img src="resources/img/HR.svg" alt="hr" height="80px" width="320px">
+                </div>
+            </div>
+            <div class="timeline">
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+
+
+                        <div class="cd-timeline-content">
+                            <h2>The Palan Family-Tree – The Start.</h2>
+                            <p>
+                                Born and raised in Ghatkopar, Mumbai - India. Blessed with a sweet family to whom I owe everything. So, introducing the Palan
+                                Family-Tree, first come my grandparents Mr. Babulal and Mrs. Vasanti Palan who are no less than my parents, my mom
+                                Mrs. Bhawana and my dad Mr. Anil Palan, my uncle Mr. Haresh Palan and his wife Mrs. Jyoti Palan. And my siblings
+                                Khusboo, Karan and Gaurav without whom my childhood would have been incomplete and boring!
+                            </p>
+                            <span class="cd-date">May 23 1992</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>School + Friends</h2>
+                            <p>
+                                Completed my schooling in Pune Vidya Bhawan High School,Mumbai - India. Along the years, made many friends,
+                                bonded with few and the others left. Cheers to the ones who stayed; Dharav, Kunal, Kashyap, Neel and Deep. Ever since we met,
+                                our friendship has just grown.
+                            </p>
+                            <span class="cd-date">Aug 1996- May 2008</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Study – Exams – Party Hard – Repeat, YES!</h2>
+                            <p>
+                                The most awaited phase of my life had already begun. College! Earned my Diploma Degree in Information Technology at
+                                Shah & Anchor Kuttchii Polytechnic. My technical learning phase began with programming languages like C, C++ and then eventually
+                                learnt JAVA. During this period, I also got an opportunity to learn Databases and Visual Studio.
+                                In 2011, I started pursuing my Engineering career in Computer Engineering stream at KJSCE (Affiliated to University of Mumbai, India). I consider it to be one of the best phases of my life.
+                            </p>
+                            <span class="cd-date">Aug 2008- May 2014</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>Self-Learning Phase, because it was hard-luck!</h2>
+                            <p>Time flew by, and within a blink of an eye the Degree life was over.
+                                Responsibilities started to pour in. The Job-Hunt phase had begun, this was one of the toughest,
+                                stressful phases; were in I had to keep my patience up-tight. Hard-Luck, I guess! Couldn’t find a
+                                job. Eventually, I started learning Web Technologies from scratch, enrolled for an online course which
+                                was based on Front End Web Development by Udemy and also learnt PHP. Developed a few websites, I freelanced!</p>
+
+                            <span class="cd-date">Aug 2014- February 2016</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>United States, it is! </h2>
+                            <p>
+                                Craving to learn something new and interesting had already begun. Which in a way, acted as a driver to push me in the direction of
+                                pursuing my Master’s Program of Study. The applications were all sent out to a couple of colleges, now was the time to
+                                wait! Finally, in the month of June, 2016, I received an acceptance admit from George Mason University, Virginia, USA.
+                                It all happened in a snap of a moment. First passport stamp, and I flew!  (Oh yes, the United States of America. A
+                                place where dreams come true!). Started pursuing my Master’s study in Computer Science field.
+                            </p>
+
+                            <span class="cd-date">August 18</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <h2>The Present</h2>
+                            <p>Currently, I am pursuing my second semester. Looking for a good part-time opportunity (Research Assistantship) at the department. And also, working on short-listing companies to apply for the Summer Internship 2017.</p>
+                            <span class="cd-date"></span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="resume" id="resume_id">
+    <div class="container-fluid">
+        <div class="row resume_header">
+            <div class="section_header">
+                <h4> Find out what I've accomplished over the years</h4>
+                <h2>Dig A little deeper</h2>
+                <div class="download-resume">
+                    <a class="mybtn1" href="/resources/files/JayPalan_Resume.pdf" download="JayPalan_Resume">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container resume-body">
+        <div class="row resume_content">
+            <div class="col-xs-12 col-sm-4">
+                <h5>technologies</h5>
+            </div>
+            <div class="col-xs-12 col-sm-8 content-property js--waypoint-1">
+                <div class="col-xs-6">
+                    <h6>Day-to-day comfort</h6>
+                    <ul>
+                        <li>JAVA</li>
+                        <li>Spring</li>
+                        <li>Python</li>
+                        <li>HTML5/ CSS3</li>
+                        <li>JavaScript/Jquery</li>
+                        <li>PHP</li>
+                        <li>Bootstrap /Foundation</li>
+                        <li>REST</li>
+                        <li>MySql</li>
+                        <li>Oracle</li>
+                        <li>Responsive Layout and Design</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <h6>Experienced With</h6>
+                    <ul>
+                        <li>C</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Angular.JS</li>
+                        <li>Ajax</li>
+                        <li>JSON</li>
+                        <li>Node.JS</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="row resume_content education">
+            <div class="col-xs-12 col-sm-4">
+                <h5>Education</h5>
+            </div>
+            <div class="col-xs-12 col-sm-8 education-property js--waypoint-2">
+                <div class="col-xs-12">
+                    <h6>Masters in Science, Computer Science</h6>
+                    <div class="col-xs-8">
+                        <p>George Mason University, Fairfax, VA.</p>
+                    </div>
+                    <div class="col-xs-4">
+                        Aug 2016 - May 2018
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <h6>Bachelors in Engineering, Computer Engineering</h6>
+                    <div class="col-xs-8">
+                        <p>University of Mumbai, K.J.Somaiya College of Engg, Mumbai, India </p>
+                    </div>
+                    <div class="col-xs-4">
+                        Aug 2011 - May 2014
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <h6>Diploma in Information Technology</h6>
+                    <div class="col-xs-8">
+                        <p>MSBTE, Shah &amp; Anchor Kutchhi Polytechnic College , Mumbai, India</p>
+                    </div>
+                    <div class="col-xs-4">
+                        Aug 2008 - May 2011
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="row resume_content experience">
+            <div class="col-xs-12 col-sm-4">
+                <h5>Work Experience</h5>
+            </div>
+            <div class="col-xs-12 col-sm-8 js--waypoint-3 experience-content">
+                <div class="col-xs-12">
+                    <h6>Freelance Web Designer <span class="e-date">Apr 2015 - Marc 2016</span></h6>
+                    <p>Developed websites like Ghoomvanu, StudySid and for various clients &amp;
+                        consulted in prior to generate and share concepts. Developed websites using Bootstrap 3.0
+                        for responsive and mobile-first websites. Tested Real-time websites before launch to ensure
+                        quality assurance.
+                    </p>
+                </div>
+                <div class="col-xs-12">
+                    <h6>Web Developer, OneRoof Technologies, Mumbai, India <span class="e-date">Jun 2014 - Mar 2014</span></h6>
+                    <p>Worked on WordPress, HTML 5, CSS, PHP, and JavaScript for development of website and SEO of the same. Made a responsive web-site which worked with both desktop and mobile devices.</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="row resume_content experience">
+            <div class="col-xs-12 col-sm-4">
+                <h5>Publications</h5>
+            </div>
+            <div class="col-xs-12 col-sm-8 js--waypoint-4 experience-content">
+                <div class="col-xs-12">
+                    <h6><a class="publication-file" href="http://ijaerd.com/papers/finished_papers/Automatic%20Question%20Generation%20from%20Paragraph-IJAERDV03I1213514.pdf">Automatic Question Generation (NLP)</a> <span class="e-date">Aug 2013 - May 2014</span></h6>
+                    <p>The main aim of the application was to generate questions from paragraphs which were inputted
+                        by the user. The generated questions utilized two algorithms depending on complexity of the
+                        sentence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact_me" id="contact_id">
+    <div class="contact-me-header">
+        <h3>Reach out &amp; let&apos;s have a chat</h3>
+    </div>
+    <div class="container-fluid">
+        <div class=" row contact-me-body">
+            <div class="col-xs-12 col-sm-6 contact-info">
+                <div class="col-xs-12">
+                    <h4>Contact Me Today</h4>
+                    <p>Please feel free to reach out to me if you have any questions or comments about the services I
+                        offer. Also, you could always just send me a friendly hello.</p>
+                </div>
+                <div class="col-xs-12 contact-information">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li>ATTN: Jay Palan</li>
+                        <li>10600 G</li>
+                        <li>Kitty Pozer Dr</li>
+                        <li>Fairfax , VA</li>
+                        <li>571-778-8434</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 contact-socials">
+                    <ul>
+                        <li><a href="https://www.instagram.com/jay_palan_/"><i class="icon ion-social-instagram-outline"></i> </a> </li>
+                        <li><a href="https://www.facebook.com/palanjay"><i   class="icon ion-social-facebook-outline"></i> </a> </li>
+                        <li><a href="https://www.linkedin.com/in/jay-palan-325197133"><i class="icon ion-social-linkedin-outline"></i> </a> </li>
+                        <li><a href="https://twitter.com/jpalan23?lang=en"><i class="icon ion-social-twitter-outline"></i> </a> </li>
+                        <li><a href="mailto:jpalan.gmu@gmail.com"><i class="icon ion-ios-email-outline"></i> </a> </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 contact-form">
+                <div class="col-xs-12">
+                    <div class="contact-me-maps" id="map">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3"><a href="code_shop.html">Code Shop</a> </div>
+            <div class="col-xs-3"><a href="#about_id">About</a> </div>
+            <div class="col-xs-3"><a href="#resume_id"> Resume</a></div>
+            <div class="col-xs-3"><a href="#contact_id">Contact</a> </div>
+        </div>
+        <div class="row">
+            <p>For more information, call today at (571) 778-8434.</p>
+        </div>
+        <div class="row">
+            <ul>
+                <li><a href="https://www.instagram.com/jay_palan_/"><i class="icon ion-social-instagram-outline"></i> </a> </li>
+                <li><a href="https://www.facebook.com/palanjay"><i   class="icon ion-social-facebook-outline"></i> </a> </li>
+                <li><a href="https://www.linkedin.com/in/jay-palan-325197133"><i class="icon ion-social-linkedin-outline"></i> </a> </li>
+                <li><a href="https://twitter.com/jpalan23?lang=en"><i class="icon ion-social-twitter-outline"></i> </a> </li>
+                <li><a href="mailto:jpalan.gmu@gmail.com"><i class="icon ion-ios-email-outline"></i> </a> </li>
+
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="vendors/js/modernizr.js"></script>
+<script src="vendors/js/bootstrap.js"></script>
+<script src="resources/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" ></script>
+<script >
+    particlesJS.load('particles-js','particles.json',function () {
+        
+    })
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89986945-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
