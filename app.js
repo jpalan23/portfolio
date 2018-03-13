@@ -1,20 +1,28 @@
-const express= require('express');
-const path= require ('path');
+const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const app=express();
+// // DB Config
+// require('./config/db');
 
-// Public Folder
-app.use(express.static(path.join(__dirname,'public')));
+const app = express();
 
-// Body Parser
-app.use(bodyParser.json);
-app.use(bodyParser.urlencoded({extended:false}));
+const poll = require('./routes/poll');
 
-//Enable CORS
+// Set public folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Body parser middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Enable CORS
 app.use(cors());
 
-const port=3000;
+app.use('/poll', poll);
 
-app.listen(port,()=>console.log(`server started on port ${port}`));
+const port = 3000;
+
+// Start server
+app.listen(port, () => console.log(`Server started on port ${port}`));

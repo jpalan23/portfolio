@@ -720,6 +720,50 @@ text-align: center;
     color: #6b717e;
 }
 
+/*  Vote for Me */
+.vote-me-header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/vote.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/vote.jpg");
+    /* Set a specific height */
+    height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vote-me-header h3{
+    font-family: 'Lato', serif;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 11px;
+    /* text-decoration: blink; */
+    margin-bottom: 0px;
+    font-size: 30px;
+    padding-top: 130px;
+}
+.vote-me-body{
+    padding: 80px 0;
+}
+
+.vote-me-body h4{
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.vote-me-body form{
+    display: flex;
+    width: 400px;
+    /* flex-direction: column; */
+    flex-flow: column;
+    margin: 40px auto;
+}
+
 /*  Contact Me Part*/
 
 .contact-me-header{
@@ -909,6 +953,33 @@ footer .row:nth-of-type(3){
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.code_section_header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/projects.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("../img/projects.jpg");
+    /* Set a specific height */
+    height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.code_section_header h2{
+    font-family: 'Lato', serif;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 11px;
+    /* text-decoration: blink; */
+    margin-bottom: 0px;
+    font-size: 30px;
+    padding-top: 130px; 
 }
 
 .code-shop h4{
