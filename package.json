@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Jay Palan Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpalan23/"
+  },
+  "author": "Jay Palan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.10",
+    "pusher": "^1.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  }
+}
