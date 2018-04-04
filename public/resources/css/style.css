@@ -626,11 +626,11 @@ text-align: center;
 }
 
 .resume_content h6{
-    font-size: 18px;
+    font-size: 17px;
     text-transform: capitalize;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     text-align: left;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 
 .resume_content ul{
